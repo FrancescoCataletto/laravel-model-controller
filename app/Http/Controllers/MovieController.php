@@ -19,4 +19,10 @@ class MovieController extends Controller
 
         return view('alphabet', compact('movies'));
     }
+
+    public function wallUp(){
+        $movies = Movie::where('date', '<', '1989-11-09')->get();
+
+        return view('wallUp', compact('movies'));
+    }
 }
