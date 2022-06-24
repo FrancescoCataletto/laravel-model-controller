@@ -13,4 +13,10 @@ class MovieController extends Controller
         
         return view('home', compact('movies'));
     }
+
+    public function alphabet(){
+        $movies = Movie::orderBy('title', 'asc')->get();
+
+        return view('alphabet', compact('movies'));
+    }
 }
