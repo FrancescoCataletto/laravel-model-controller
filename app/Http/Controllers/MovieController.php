@@ -21,8 +21,14 @@ class MovieController extends Controller
     }
 
     public function wallUp(){
-        $movies = Movie::where('date', '<', '1989-11-09')->get();
+        $movies = Movie::where('date', '<', '1989-11-09')->orderBy('date', 'asc')->get();
 
         return view('wallUp', compact('movies'));
+    }
+
+    public function wallDown(){
+        $movies = Movie::where('date', '>', '1989-11-09')->orderBy('date', 'asc')->get();
+
+        return view('wallDown', compact('movies'));
     }
 }
