@@ -6,6 +6,7 @@
             <li><a href="{{route('wallUp')}}">Pre muro di berlino</a></li>
             <li><a href="{{route('wallDown')}}">Post muro di berlino</a></li>
             <li><a href="{{route('about')}}">About us</a></li>
+            <li><a href="{{route('contacts')}}">Contacts</a></li>
         </ul>
     </div>
 </header>
