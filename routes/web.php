@@ -17,3 +17,4 @@ Route::get('/', 'MovieController@index');
 Route::get('alphabet', 'MovieController@alphabet')->name('alphabet');
 Route::get('wallUp', 'MovieController@wallUp')->name('wallUp');
 Route::get('wallDown', 'MovieController@wallDown')->name('wallDown');
+Route::get('about', 'PageController@about')->name('about');
